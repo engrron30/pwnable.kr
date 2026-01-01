@@ -14,6 +14,9 @@ int main()
 	 * */
 	const char *cp = "1234";
 
+	/* CPU (most likely x86, used in Linux/PCs) is little-endian.
+	 * That means the least significant byte is stored first in memory.
+	 * */
 	int *ip = (int *) cp;
 
 	// Printing the string "1234" will be 
