@@ -16,10 +16,13 @@ int main()
 
 	/* CPU (most likely x86, used in Linux/PCs) is little-endian.
 	 * That means the least significant byte is stored first in memory.
+	 *
+	 * ip = 0x34333231
 	 * */
 	int *ip = (int *) cp;
 
-	// Printing the string "1234" will be 
+	/* This will prints the 0x34333231 corresponding decimal value.
+	 * which is 875770417. */
 	printf("ip = %d\n", *ip);
 
 	return 0;
